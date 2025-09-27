@@ -45,12 +45,7 @@
       .then(res => res.json())
       .then(data => {
         chat.lastChild.textContent = 'AI: ' + (data.reply || 'Inget svar');
-      })
-      .catch(err => {
-        chat.lastChild.textContent = 'AI: ❌ Fel vid anslutning';
-        console.error(err);
-      });
-    }
+  
   </script>
 
 </body>
